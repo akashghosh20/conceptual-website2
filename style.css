@@ -227,3 +227,6 @@ body {
 .section-title {
   text-align: center;
 }
+.banner img {
+  border: 4px solid royalblue;
+}
