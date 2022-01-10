@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  font-family: "Tinos", serif;
+}
+.banner {
+  display: flex;
+  height: 100vh;
+}
+.banner-left {
+  flex: 1;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+.banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  margin-left: 55px;
+}
+.banner-title {
+  white-space: nowrap;
+  position: relative;
+  color: transparent;
+}
+.banner-title::before {
+  content: "Easy Study BD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: aqua;
+  animation: typing 3s linear infinite;
+}
+@keyframes typing {
+  0% {
+    content: "E";
+  }
+  6% {
+    content: "Ea";
+  }
+  12% {
+    content: "Eas";
+  }
+  18% {
+    content: "Easy";
+  }
+  24% {
+    content: "Easy S";
+  }
+  30% {
+    content: "Easy St";
+  }
+  36% {
+    content: "Easy Stu|";
+  }
+  42% {
+    content: "Easy Stud|";
+  }
+  48% {
+    content: "Easy Study|";
+  }
+  54% {
+    content: "Easy Study B|";
+  }
+  60% {
+    content: "Easy Study BD|";
+  }
+  90% {
+    content: "Easy Study B|";
+  }
+  91% {
+    content: "Easy Study|";
+  }
+  92% {
+    content: "Easy Stud|";
+  }
+  93% {
+    content: "Easy Stu|";
+  }
+  94% {
+    content: "Easy St|";
+  }
+  95% {
+    content: "Easy S| ";
+  }
+  96% {
+    content: "Easy |";
+  }
+  97% {
+    content: "Eas| ";
+  }
+  98% {
+    content: "Ea|";
+  }
+  99% {
+    content: "E|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.banner-text {
+  line-height: 2;
+  margin: 20px 0;
+}
+.love-button {
+  outline: 0;
+  font-size: 15px;
+  background-color: aqua;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.love-button:hover {
+  background-color: transparent;
+  color: turquoise;
+  border: 1px solid royalblue;
+}
+.photo {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+.border {
+  background-color: seashell;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+.border.top,
+.border.bottom {
+  height: 4px;
+  width: 140px;
+}
+.border.left,
+.border.right {
+  height: 140px;
+  width: 4px;
+}
+.border.top {
+  top: 5px;
+  right: 100%;
+}
+.border.bottom {
+  bottom: 5px;
+  left: 100%;
+}
+.border.left {
+  left: 5px;
+  top: 100%;
+}
+.border.right {
+  right: 5px;
+  bottom: 100%;
+}
+.photo:hover .border.top {
+  top: 5px;
+  right: 5px;
+}
+.photo:hover .border.bottom {
+  bottom: 5px;
+  left: 5px;
+}
+.photo:hover .border.left {
+  top: 5px;
+  left: 5px;
+}
+.photo:hover .border.right {
+  bottom: 5px;
+  right: 5px;
+}
+.photo-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0px;
+  padding-left: 30px;
+  color: springgreen;
+  transform: translateY(400px);
+}
+.photo:hover .photo-content {
+  transform: translateY(52px);
+  transition: 0.3s ease-in-out;
+}
+.photo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.photo:hover::before {
+  opacity: 1;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.section-title h1 {
+  color: royalblue;
+  font-size: 20px;
+
+  margin: 10px;
+  border-left: 3px solid rebeccapurple;
+  border-right: 3px solid rebeccapurple;
+  display: inline-block;
+  padding: 0 10px;
+}
+.section-title {
+  text-align: center;
+}
